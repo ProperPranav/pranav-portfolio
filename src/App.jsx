@@ -2,37 +2,32 @@ import "./App.css";
 
 function App() {
   const skillGroups = [
-  {
-    title: "Programming",
-    skills: ["Java", "Python", "JavaScript", "SQL"],
-  },
-  {
-    title: "Web Development",
-    skills: ["HTML", "CSS", "React.js", "Node.js", "Express.js"],
-  },
-  {
-    title: "Databases",
-    skills: ["MongoDB", "MySQL"],
-  },
-  {
-    title: "Tools",
-    skills: ["Git", "GitHub", "Linux"],
-  },
-  {
-    title: "Cybersecurity",
-    skills: [
-      "Computer Networking",
-      "Network Security",
-    ],
-  },
-];
+    {
+      title: "Programming",
+      skills: ["Java", "Python", "JavaScript", "SQL"],
+    },
+    {
+      title: "Web Development",
+      skills: ["HTML", "CSS", "React.js", "Node.js", "Express.js"],
+    },
+    {
+      title: "Databases",
+      skills: ["MongoDB", "MySQL"],
+    },
+    {
+      title: "Tools",
+      skills: ["Git", "GitHub", "Linux"],
+    },
+    {
+      title: "Cybersecurity",
+      skills: ["Computer Networking", "Network Security"],
+    },
+  ];
 
   return (
     <div className="portfolio">
 
-      {/* =========================
-          NAVBAR
-      ========================= */}
+      {/* NAVBAR */}
 
       <nav className="navbar">
         <div className="logo">PB.</div>
@@ -47,9 +42,7 @@ function App() {
       </nav>
 
 
-      {/* =========================
-          HERO
-      ========================= */}
+      {/* HERO */}
 
       <section className="hero">
 
@@ -89,7 +82,6 @@ function App() {
 
           </div>
 
-
           <div className="social-links">
 
             <a
@@ -115,29 +107,16 @@ function App() {
         </div>
 
 
-        {/* CODE CARD */}
+        {/* PROFILE IMAGE */}
 
         <div className="hero-card">
 
-          <div className="card-glow"></div>
-
-          <div className="code-card">
-
-            <div className="code-header">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-
-            <pre>{`const pranav = {
-  role: "CSE Student",
-  focus: [
-    "Development",
-    "Cybersecurity"
-  ],
-  goal: "Keep building."
-};`}</pre>
-
+          <div className="profile-container">
+            <img
+              src="/profile.jpeg"
+              alt="Pranav Bhagat"
+              className="profile-image"
+            />
           </div>
 
         </div>
@@ -145,9 +124,7 @@ function App() {
       </section>
 
 
-      {/* =========================
-          ABOUT
-      ========================= */}
+      {/* ABOUT */}
 
       <section
         id="about"
@@ -201,9 +178,7 @@ function App() {
       </section>
 
 
-      {/* =========================
-          SKILLS
-      ========================= */}
+      {/* SKILLS */}
 
       <section
         id="skills"
@@ -223,32 +198,38 @@ function App() {
 
           <div className="skills-grid">
 
-  {skillGroups.map((group) => (
-    <div className="skill-category" key={group.title}>
+            {skillGroups.map((group) => (
+              <div
+                className="skill-category"
+                key={group.title}
+              >
 
-      <h3>{group.title}</h3>
+                <h3>{group.title}</h3>
 
-      <div className="skill-list">
-        {group.skills.map((skill) => (
-          <span className="skill" key={skill}>
-            {skill}
-          </span>
-        ))}
-      </div>
+                <div className="skill-list">
 
-    </div>
-  ))}
+                  {group.skills.map((skill) => (
+                    <span
+                      className="skill"
+                      key={skill}
+                    >
+                      {skill}
+                    </span>
+                  ))}
 
-</div>
+                </div>
+
+              </div>
+            ))}
+
+          </div>
 
         </div>
 
       </section>
 
 
-      {/* =========================
-          CREDENTIALS
-      ========================= */}
+      {/* CREDENTIALS */}
 
       <section
         id="credentials"
@@ -266,11 +247,7 @@ function App() {
             <span>experience.</span>
           </h2>
 
-
           <div className="credentials-grid">
-
-
-            {/* EDUCATION */}
 
             <div className="credential-card">
 
@@ -293,8 +270,6 @@ function App() {
 
             </div>
 
-
-            {/* EXPERIENCE */}
 
             <div className="credential-card">
 
@@ -320,8 +295,6 @@ function App() {
             </div>
 
 
-            {/* ACHIEVEMENT */}
-
             <div className="credential-card">
 
               <div className="credential-type">
@@ -345,8 +318,6 @@ function App() {
             </div>
 
 
-            {/* WORKSHOP */}
-
             <div className="credential-card">
 
               <div className="credential-type">
@@ -369,8 +340,6 @@ function App() {
             </div>
 
 
-            {/* HACKATHONS */}
-
             <div className="credential-card">
 
               <div className="credential-type">
@@ -392,7 +361,6 @@ function App() {
 
             </div>
 
-
           </div>
 
         </div>
@@ -400,9 +368,7 @@ function App() {
       </section>
 
 
-      {/* =========================
-          PROJECTS
-      ========================= */}
+      {/* PROJECTS */}
 
       <section
         id="projects"
@@ -443,9 +409,7 @@ function App() {
       </section>
 
 
-      {/* =========================
-          CONTACT
-      ========================= */}
+      {/* CONTACT */}
 
       <section
         id="contact"
@@ -469,7 +433,6 @@ function App() {
             opportunities.
           </p>
 
-
           <a
             className="primary-button"
             href="mailto:pranavb973@gmail.com"
@@ -477,12 +440,9 @@ function App() {
             Get In Touch
           </a>
 
-
           <div className="contact-links">
 
-            <a
-              href="mailto:pranavb973@gmail.com"
-            >
+            <a href="mailto:pranavb973@gmail.com">
               pranavb973@gmail.com
             </a>
 
@@ -509,9 +469,7 @@ function App() {
       </section>
 
 
-      {/* =========================
-          FOOTER
-      ========================= */}
+      {/* FOOTER */}
 
       <footer>
 
