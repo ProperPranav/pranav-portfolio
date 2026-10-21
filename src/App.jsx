@@ -276,31 +276,31 @@ function App() {
             Things I'm{" "}
             <span>building.</span>
           </h2>
-<div className="projects-grid">
-  <article className="project-card">
-    <div className="project-type">
-      ANDROID APP · PERSONAL PROJECT
-    </div>
-    <h3>Spendly</h3>
-    <p className="project-description">
-      An expense-tracking application designed to help
-      users manage their spending and keep track of
-      their personal finances.
-    </p>
-    <div className="project-tags">
-      <span>Android</span>
-      <span>Expense Tracking</span>
-    </div>
-    <a
-      href="https://drive.google.com/file/d/1F5XgjMAL3e8IaY1fMD0dXu0fmRHYAOja/view?usp=drive_link"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="project-link"
-    >
-      Get Spendly ↗
-    </a>
-  </article>
-</div>
+          <div className="projects-grid">
+            <article className="project-card">
+              <div className="project-type">
+                ANDROID APP · PERSONAL PROJECT
+              </div>
+              <h3>Spendly</h3>
+              <p className="project-description">
+                An expense-tracking application designed to help
+                users manage their spending and keep track of
+                their personal finances.
+              </p>
+              <div className="project-tags">
+                <span>Android</span>
+                <span>Expense Tracking</span>
+              </div>
+              <a
+                href="https://drive.google.com/file/d/1F5XgjMAL3e8IaY1fMD0dXu0fmRHYAOja/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                Get Spendly ↗
+              </a>
+            </article>
+          </div>
         </div>
       </section>
       {/* CONTACT */}
@@ -339,7 +339,7 @@ function App() {
               github.com/ProperPranav
             </a>
             <a
-              href="www.linkedin.com/in/bhagatpranav"
+              href="https://www.linkedin.com/in/bhagatpranav"
               target="_blank"
               rel="noreferrer"
             >
