@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+
 /* Variables */
 :root {
   --bg: #09090b;
@@ -10,27 +11,33 @@
   --accent: #a855f7;
   --accent-light: #c084fc;
 }
+
 /* Reset */
 * {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
   font-family: "Inter", sans-serif;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
 .portfolio {
   min-height: 100vh;
   overflow-x: hidden;
 }
+
 /* Navbar */
 .navbar {
   height: 76px;
@@ -42,24 +49,29 @@ a {
   justify-content: space-between;
   border-bottom: 1px solid var(--border);
 }
+
 .logo {
   font-family: "Space Grotesk", sans-serif;
   font-size: 25px;
   font-weight: 700;
   color: var(--accent-light);
 }
+
 .nav-links {
   display: flex;
   gap: 32px;
 }
+
 .nav-links a {
   color: var(--muted);
   font-size: 14px;
   transition: 0.2s;
 }
+
 .nav-links a:hover {
   color: var(--text);
 }
+
 /* Hero */
 .hero {
   min-height: calc(100vh - 76px);
@@ -71,9 +83,11 @@ a {
   align-items: center;
   gap: 80px;
 }
+
 .hero-content {
   min-width: 0;
 }
+
 .eyebrow {
   margin-bottom: 25px;
   color: var(--accent-light);
@@ -81,6 +95,7 @@ a {
   font-weight: 600;
   letter-spacing: 2px;
 }
+
 .hero h1 {
   margin: 0;
   font-family: "Space Grotesk", sans-serif;
@@ -88,9 +103,11 @@ a {
   line-height: 0.98;
   letter-spacing: -4px;
 }
+
 .hero h1 span {
   color: var(--accent-light);
 }
+
 .hero-description {
   max-width: min(600px, 100%);
   margin: 30px 0;
@@ -98,12 +115,14 @@ a {
   font-size: 18px;
   line-height: 1.7;
 }
+
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
   margin-bottom: 30px;
 }
+
 .primary-button,
 .secondary-button {
   display: inline-block;
@@ -113,20 +132,25 @@ a {
   font-weight: 600;
   transition: 0.2s;
 }
+
 .primary-button {
   background: var(--text);
   color: #09090b;
 }
+
 .primary-button:hover {
   transform: translateY(-2px);
 }
+
 .secondary-button {
   border: 1px solid var(--border);
   color: var(--text);
 }
+
 .secondary-button:hover {
   border-color: var(--accent);
 }
+
 .social-links {
   display: flex;
   align-items: center;
@@ -134,14 +158,17 @@ a {
   color: var(--muted);
   font-size: 14px;
 }
+
 .social-links a:hover {
   color: var(--accent-light);
 }
+
 /* Profile Image */
 .hero-card {
   display: flex;
   justify-content: center;
 }
+
 .profile-container {
   width: 340px;
   height: 420px;
@@ -154,10 +181,12 @@ a {
     transform 0.3s ease,
     border-color 0.3s ease;
 }
+
 .profile-container:hover {
   transform: translateY(-4px);
   border-color: var(--accent);
 }
+
 .profile-image {
   width: 100%;
   height: 100%;
@@ -165,6 +194,7 @@ a {
   object-fit: cover;
   object-position: center top;
 }
+
 /* Sections */
 .section {
   max-width: 1200px;
@@ -175,15 +205,18 @@ a {
   gap: 70px;
   border-top: 1px solid var(--border);
 }
+
 .section-content {
   min-width: 0;
 }
+
 .section-label {
   color: var(--accent-light);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 2px;
 }
+
 .section h2 {
   margin: 0 0 30px;
   font-family: "Space Grotesk", sans-serif;
@@ -191,41 +224,49 @@ a {
   line-height: 1.05;
   letter-spacing: -2px;
 }
+
 .section h2 span {
   color: var(--accent-light);
 }
-.section-content > p {
+
+.section-content>p {
   max-width: 720px;
   margin-bottom: 20px;
   color: var(--muted);
   font-size: 16px;
   line-height: 1.8;
 }
+
 /* Stats */
 .stats {
   display: flex;
   gap: 70px;
   margin-top: 50px;
 }
+
 .stats div {
   display: flex;
   flex-direction: column;
   gap: 7px;
 }
+
 .stats strong {
   font-family: "Space Grotesk", sans-serif;
   font-size: 30px;
 }
+
 .stats span {
   color: var(--muted);
   font-size: 12px;
 }
+
 /* Skills */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 18px;
 }
+
 .skill-category {
   padding: 24px;
   background: var(--surface);
@@ -235,20 +276,24 @@ a {
     transform 0.2s ease,
     border-color 0.2s ease;
 }
+
 .skill-category:hover {
   transform: translateY(-3px);
   border-color: var(--accent);
 }
+
 .skill-category h3 {
   margin: 0 0 18px;
   color: var(--text);
   font-size: 16px;
 }
+
 .skill-list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
+
 .skill {
   padding: 8px 12px;
   border: 1px solid var(--border);
@@ -260,10 +305,12 @@ a {
     color 0.2s ease,
     border-color 0.2s ease;
 }
+
 .skill:hover {
   color: var(--accent-light);
   border-color: var(--accent);
 }
+
 /* Credentials */
 .credentials-grid {
   display: grid;
@@ -271,6 +318,7 @@ a {
   gap: 20px;
   margin-top: 45px;
 }
+
 .credential-card {
   position: relative;
   padding: 28px;
@@ -281,10 +329,12 @@ a {
     transform 0.25s ease,
     border-color 0.25s ease;
 }
+
 .credential-card:hover {
   transform: translateY(-4px);
   border-color: var(--accent);
 }
+
 .credential-type {
   margin-bottom: 18px;
   color: var(--accent-light);
@@ -292,6 +342,7 @@ a {
   font-weight: 700;
   letter-spacing: 1.5px;
 }
+
 .credential-card h3 {
   margin: 0 0 12px;
   color: var(--text);
@@ -299,16 +350,19 @@ a {
   font-size: 19px;
   line-height: 1.4;
 }
+
 .credential-card p {
   margin: 0 0 18px;
   color: var(--muted);
   font-size: 14px;
   line-height: 1.7;
 }
-.credential-card > span {
+
+.credential-card>span {
   color: #71717a;
   font-size: 12px;
 }
+
 /* Projects */
 .projects-grid {
   display: grid;
@@ -316,6 +370,7 @@ a {
   gap: 20px;
   margin-top: 45px;
 }
+
 .project-card {
   padding: 28px;
   background: var(--surface);
@@ -324,10 +379,12 @@ a {
   min-width: 0;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
+
 .project-card:hover {
   transform: translateY(-4px);
   border-color: var(--accent);
 }
+
 .project-type {
   margin-bottom: 18px;
   color: var(--accent-light);
@@ -335,11 +392,13 @@ a {
   font-weight: 700;
   letter-spacing: 1.5px;
 }
+
 .project-card h3 {
   margin: 0 0 14px;
   font-family: "Space Grotesk", sans-serif;
   font-size: 28px;
 }
+
 .project-description {
   color: var(--muted);
   font-size: 14px;
@@ -347,12 +406,14 @@ a {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+
 .project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin: 22px 0;
 }
+
 .project-tags span {
   padding: 7px 10px;
   border: 1px solid var(--border);
@@ -360,6 +421,7 @@ a {
   color: var(--muted);
   font-size: 12px;
 }
+
 .project-link {
   display: inline-block;
   margin-top: 8px;
@@ -367,41 +429,50 @@ a {
   font-size: 14px;
   font-weight: 600;
 }
+
 .project-link:hover {
   color: var(--text);
 }
+
 /* Contact */
 .contact {
   padding-bottom: 120px;
 }
+
 .contact-content {
   max-width: 700px;
 }
+
 .contact-content h2 {
   margin-bottom: 20px;
 }
-.contact-content > p {
+
+.contact-content>p {
   max-width: 600px;
   margin-bottom: 30px;
   color: var(--muted);
   font-size: 15px;
   line-height: 1.8;
 }
+
 .contact-links {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-top: 35px;
 }
+
 .contact-links a {
   width: fit-content;
   color: var(--muted);
   font-size: 14px;
   transition: 0.2s ease;
 }
+
 .contact-links a:hover {
   color: var(--accent-light);
 }
+
 /* Footer */
 footer {
   max-width: 1200px;
@@ -413,48 +484,60 @@ footer {
   color: #71717a;
   font-size: 12px;
 }
+
 /* Mobile */
 @media (max-width: 800px) {
   .navbar {
     padding: 0 20px;
   }
+
   .nav-links {
     display: none;
   }
+
   .hero {
     grid-template-columns: 1fr;
     gap: 50px;
     padding: 80px 20px;
   }
+
   .hero h1 {
     letter-spacing: -2px;
   }
+
   .profile-container {
     width: 280px;
     height: 350px;
   }
+
   .section {
     grid-template-columns: 1fr;
     gap: 30px;
     padding: 80px 20px;
   }
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
+
   .credentials-grid {
     grid-template-columns: 1fr;
   }
+
   .stats {
     gap: 35px;
   }
+
   .contact {
     padding-bottom: 80px;
   }
+
   .contact-links a {
     max-width: 100%;
     font-size: 13px;
     word-break: break-word;
   }
+
   footer {
     padding: 25px 20px;
     flex-direction: column;
