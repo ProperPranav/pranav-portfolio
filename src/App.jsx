@@ -339,11 +339,11 @@ function App() {
               github.com/ProperPranav
             </a>
             <a
-              href="https://www.linkedin.com/in/pranav-bhagat-b8ba242b9/"
+              href="www.linkedin.com/in/bhagatpranav"
               target="_blank"
               rel="noreferrer"
             >
-              linkedin.com/in/pranav-bhagat-b8ba242b9
+              linkedin.com/in/pranav-bhagat
             </a>
           </div>
         </div>
